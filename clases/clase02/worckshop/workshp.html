@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>UTN</title>
+   <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    header, footer {
+      background-color: #1f3558;
+      color: white;
+      padding: 10px;
+    }
+
+    main {
+      display: flex;
+    }
+
+    aside:first-of-type {
+      background-color: #4b6fb3;
+      color: white;
+      width: 25%;
+    }
+
+    article {
+      background-color: #6ea0d6;
+      width: 50%;
+    }
+
+    aside:last-of-type {
+      background-color: #e67e2e;
+      color: white;
+      width: 25%;
+    }
+
+    aside, article {
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>UTN</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Sección</a></li>
+      </ul>
+    </nav>
+
+    <form action="/buscar" method="GET">
+      <label for="busqueda">Buscar:</label>
+      <input type="search" id="busqueda" name="q" placeholder="Buscar..." required>
+      <button type="submit">Buscar</button>
+    </form>
+  </header>
+
+  <main>
+    <aside>
+      <h3>Filtros</h3>
+    </aside>
+
+    <article>
+      <h2>Título</h2>
+      <p>Contenido…</p>
+    </article>
+
+    <aside>
+      <h3>Relacionado</h3>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© UTN 2026</p>
+  </footer>
+</body>
+</html>
